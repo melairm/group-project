@@ -6,19 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 
 <body>
-    <main></main>
+    <header>
+        <nav class="top-nav">
+            <img id="logo" src="img/logo.4.svg" alt="logo">
+
+            <a href="#">About us</a>
+
+
+        </nav>
+
+
+    </header>
+    <nav class="list">
+        <div class="burger-menu">
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div id="myLinks">
+                <a href="#" class="retriever">Golden Retriever</a>
+                <a href="#contact">Pug</a>
+                <a href="#about">French Bulldog</a>
+                <a href="#about">Husky</a>
+            </div>
+        </div>
+    </nav>
     <template>
-        <article>
-            <h2>{breedname}</h2>
-            <!-- <img src="" alt="" class="cape" /> -->
-            <img src="" alt="{breedname}" />
-            <h3>{bio}</h3>
-        </article>
+        <ul>
+            <li>breedname</li>
+            <li>breedname</li>
+            <li>breedname</li>
+            <li>breedname</li>
+            <li>breedname</li>
+            <li>breedname</li>
+        </ul>
     </template>
+
+    <main>
+        <div class="container">
+            <section>
+                <!-- <img src="" alt="" class="cape" /> -->
+                <img src="" alt="{breedname}" class="dog-image" />
+            </section>
+            <article>
+                <h2>{breedname}</h2>
+                <h3>{bio}</h3>
+                <h3 class="furcolor">{furcolour}</h3>
+                <h3 class="lifespan">{lifespan}</h3>
+                <h3 class="brachyc">{brachyc}</h3>
+                
+            </article>
+
+
+        </div>
+    </main>
+
+
+
+
+
+
     <script src="script.js"></script>
+
+
+
 </body>
 
 </html>

@@ -1,0 +1,68 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  background-color: #595048;
+}
+#logo {
+  width: 150px;
+  margin-right: auto;
+}
+
+.dog-image {
+  max-width: 100%;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.list .burger-menu {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.list .burger-menu #myLinks {
+  display: none;
+}
+
+.list .burger-menu a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.list .burger-menu a.icon {
+  background: black;
+  display: block;
+  /* position: absolute; */
+  right: 0;
+  top: 0;
+}
+
+.list .burger-menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Dynamic section */
+.container {
+  display: flex;
+  flex-direction: column;
+}
