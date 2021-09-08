@@ -67,6 +67,19 @@ header {
   flex-direction: column;
 }
 
-.hidden{
+.hidden {
   display: none;
+}
+
+/* media queries */
+
+@media only screen and (min-width: 600px) {
+  .burger-menu {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .desktop-list {
+    display: none;
+  }
 }

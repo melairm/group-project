@@ -36,7 +36,6 @@
 
 // function changeDog() {
 
-
 //   document.querySelector(".retriever");
 //   document.querySelector("h2").textContent = dog.breedname;
 //   document.querySelector(".dog-image").src = dog.img_url;
@@ -63,7 +62,7 @@ fetch(url, options)
   .then((data) => {
     // console.log(data);
     handleData(data);
-    console.log(data)
+    console.log(data);
   })
   .catch((e) => {
     console.error("An error occured:", e.message);
@@ -89,19 +88,20 @@ function handleData(dogbreeds) {
     const mylinksEl = document.querySelector("#myLinks");
     mylinksEl.appendChild(clonelistitem);
 
-
     document.querySelector("h3").textContent = dog.bio;
-    document.querySelector(".furcolor").textContent = `Furcolor: ${dog.furcolor}`;
-    document.querySelector(".lifespan").textContent = `Lifespan: ${dog.lifespan} years`;
+    document.querySelector(
+      ".furcolor"
+    ).textContent = `Furcolor: ${dog.furcolor}`;
+    document.querySelector(
+      ".lifespan"
+    ).textContent = `Lifespan: ${dog.lifespan} years`;
     document.querySelector(".brachyc").textContent = `brachyc: ${dog.brachyc}`;
-
 
     // 5 append it to the DOM
   });
-  document.querySelector("#myLinks a").click()
+  document.querySelector("#myLinks a").click();
+
 }
-
-
 
 function myFunction() {
   var x = document.getElementById("myLinks");
@@ -110,7 +110,6 @@ function myFunction() {
   } else {
     x.style.display = "block";
   }
-
 }
 
 function hideList() {
