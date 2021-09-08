@@ -63,6 +63,7 @@ fetch(url, options)
   .then((data) => {
     // console.log(data);
     handleData(data);
+    console.log(data)
   })
   .catch((e) => {
     console.error("An error occured:", e.message);
@@ -70,10 +71,25 @@ fetch(url, options)
 
 function handleData(dogbreeds) {
   dogbreeds.forEach((dog) => {
-    console.log(dog);
+    // console.log(dog);
 
-    document.querySelector("h2").textContent = dog.breedname;
-    document.querySelector(".dog-image").src = dog.img_url;
+    const template = document.querySelector("#list").content;
+    const clonelistitem = template.cloneNode(true);
+    const aEl = clonelistitem.querySelector("a");
+    aEl.textContent = dog.breedname;
+    aEl.dataset.id = dog._id;
+    aEl.addEventListener("click", showDog);
+
+    function showDog(e) {
+      console.log(e);
+      document.querySelector("h2").textContent = dog.breedname;
+      document.querySelector(".dog-image").src = dog.img_url;
+    }
+
+    const mylinksEl = document.querySelector("#myLinks");
+    mylinksEl.appendChild(clonelistitem);
+
+
     document.querySelector("h3").textContent = dog.bio;
     document.querySelector(".furcolor").textContent = `Furcolor: ${dog.furcolor}`;
     document.querySelector(".lifespan").textContent = `Lifespan: ${dog.lifespan} years`;
@@ -82,7 +98,10 @@ function handleData(dogbreeds) {
 
     // 5 append it to the DOM
   });
+  document.querySelector("#myLinks a").click()
 }
+
+
 
 function myFunction() {
   var x = document.getElementById("myLinks");
