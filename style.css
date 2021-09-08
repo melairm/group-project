@@ -1,14 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap');
+
 body {
   margin: 0px;
   padding: 0px;
+  background-color: #F4E3AB;
 }
 
 header {
-  background-color: #595048;
+  background-color: #F4E3AB;
+}
+h2 {
+  font-family:'Playfair Display', serif;
+}
+h3 {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 #logo {
   width: 150px;
   margin-right: auto;
+  margin-left: 1rem;
+  
+}
+
+footer {
+  background-color: #c77926;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  justify-content: center;
 }
 
 .dog-image {
@@ -21,18 +41,18 @@ header {
   align-items: center;
 }
 
-.mobile-container {
+/* .mobile-container {
   max-width: 480px;
   margin: auto;
   background-color: #555;
   height: 500px;
   color: white;
   border-radius: 10px;
-}
+} */
 
 .list .burger-menu {
   overflow: hidden;
-  background-color: #333;
+  background-color: #c77926;
   position: relative;
 }
 
@@ -49,7 +69,7 @@ header {
 }
 
 .list .burger-menu a.icon {
-  background: black;
+  background: #c77926;
   display: block;
   /* position: absolute; */
   right: 0;
@@ -57,8 +77,8 @@ header {
 }
 
 .list .burger-menu a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #F4E3AB;
+  color: white;
 }
 
 /* Dynamic section */
@@ -73,7 +93,7 @@ header {
 
 /* media queries */
 
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
   .burger-menu {
     display: none;
   }
@@ -82,4 +102,42 @@ header {
   .desktop-list {
     display: none;
   }
+} */
+
+
+/* desktop view */
+.container {
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: min(90%, 70.5rem);
+  background-color: #F4E3AB;
+}
+
+/* Above is the Introduction for all the pages */
+
+
+.split {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 40em) {
+  .split {
+      flex-direction: row;
+  }
+
+  .split > * {
+      flex-basis: 100%;
+  }
+
+  .split > * + * {
+      margin-left: 2em;
+      margin-bottom: 2em;
+  }
+}
+main img {
+    border: 5px solid #c77926;
+    background-repeat: no-repeat;
+    background-position: cover;
+ 
 }
