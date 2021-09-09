@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F27052;stroke:#FFFFFF;stroke-width:5.0013;stroke-miterlimit:4.001;}
+	.st1{fill:#F2F2F2;}
+	.st2{fill:#F2F2F2;stroke:#FFFFFF;stroke-width:5.0028;stroke-miterlimit:4.0022;}
+	.st3{fill:#F2F2F2;stroke:#F2F2F2;stroke-width:1.0006;stroke-miterlimit:4.002;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:4.002;stroke-miterlimit:4.002;}
+</style>
+<path class="st0" d="M535.5,156.5h383c53,0,96,43,96,96v254c0,53-43,96-96,96h-383c-53,0-96-43-96-96v-254
+	C439.5,199.5,482.5,156.5,535.5,156.5z"/>
+<g id="Group_1" transform="matrix(0.985, -0.174, 0.174, 0.985, -301.113, 20.745)">
+	<g id="Ellipse_1" transform="translate(349.291 47) rotate(60)">
+		
+			<ellipse transform="matrix(0.7116 0.7025 -0.7025 0.7116 -52.5964 -610.646)" class="st1" cx="717.6" cy="-369.4" rx="110.7" ry="104.5"/>
+		
+			<ellipse transform="matrix(0.6991 0.7151 -0.7151 0.6991 -48.1514 -624.3352)" class="st2" cx="717.7" cy="-369.4" rx="90.9" ry="85.8"/>
+	</g>
+	<g id="Rectangle_1" transform="translate(328.152 71.433) rotate(60)">
+		<path class="st1" d="M716.1-273.2L716.1-273.2c17.1,0.5,31.4,14.6,31.9,31.6l3.8,130.4c0.5,16.9-13,30.3-30.1,29.8l0,0
+			c-17.1-0.5-31.4-14.6-31.9-31.6L686-243.4C685.5-260.3,698.9-273.7,716.1-273.2z"/>
+		<path class="st3" d="M716.2-269.4L716.2-269.4c15,0.4,27.5,12.8,27.9,27.6l3.8,130.4c0.4,14.8-11.4,26.5-26.3,26.1l0,0
+			c-15-0.4-27.5-12.8-27.9-27.6l-3.8-130.4C689.4-258.1,701.2-269.8,716.2-269.4z"/>
+	</g>
+	<line id="Line_1" class="st4" x1="960.9" y1="535.1" x2="869.5" y2="591.4"/>
+</g>
+</svg>

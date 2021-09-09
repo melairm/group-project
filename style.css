@@ -7,15 +7,21 @@ body {
 }
 
 header {
-  background-color: white;
+  background-color: #f2f2f2;
 }
 h2 {
   font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
 }
 h3 {
   font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
 }
-#logo {
+
+article{
+  padding: 1vw;
+}
+#logo, #search {
   width: 150px;
   /* margin-right: auto; */
   /* text-align: center; */
@@ -23,6 +29,10 @@ h3 {
   padding: 0px;
   margin-left: 1rem;
   transition: 0.3s;
+}
+
+#search{
+  max-width: 100px;
 }
 
 header p {
@@ -33,10 +43,11 @@ header p {
   transform: scale(1.1);
 }
 
-a {
+.about {
   color: #c77926;
   font-family: "Source Sans Pro", sans-serif;
-  margin-right: 2rem;
+  margin-left: auto;
+
 }
 
 .dog-image {
@@ -51,7 +62,7 @@ a {
 
 .list .burger-menu {
   overflow: hidden;
-  background-color: #c77926;
+  background-color: #F27052;
   position: relative;
 }
 
@@ -60,7 +71,7 @@ a {
 }
 
 .list .burger-menu a {
-  color: white;
+  color: #f2f2f2;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -68,7 +79,7 @@ a {
 }
 
 .list .burger-menu a.icon {
-  background: #c77926;
+  background: #F27052;
   display: block;
   /* position: absolute; */
   right: 0;
@@ -76,8 +87,12 @@ a {
 }
 
 .list .burger-menu a:hover {
-  background-color: #f4e3ab;
+  background-color: #343440;
   color: white;
+}
+
+.list{
+  position: absolute;
 }
 
 /* Dynamic section */
@@ -100,11 +115,49 @@ a {
 /* Above is the Introduction for all the pages */
 
 .split {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  position: absolute;
+  top: 15vw;
+  left: 26;
+
 }
 
-@media (min-width: 40em) {
+
+@media (max-width: 800px) {
+  .split{
+    position: static;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .textbox{
+    position:static;
+
+
+  }
+
+}
+
+@media (min-width: 800px) {
+
+  .splitimage{
+    position: relative;
+    max-width: 30vw;
+    top:-6vw;
+    left: 5vw;
+    
+  }
+
+  .textbox{
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 30vw;
+    top:10vw;
+    left: 30vw;
+  
+  }
+
   .split {
     flex-direction: row;
   }
@@ -117,24 +170,57 @@ a {
     margin-left: 2em;
     margin-bottom: 2em;
   }
+
+
 }
 main img {
-  border: 5px solid #c77926;
+ 
   background-repeat: no-repeat;
   background-position: cover;
 }
 
+
+
+/* .textbox{
+  position: absolute;
+  background-color: #f2f2f2;
+  width: 30vw;
+  top:10vw;
+  left: 30vw;
+
+} */
+
+
 footer {
-  background-color: #c77926;
-  padding: 0;
+  background-color: #343440;
+  padding: 1vw 0 1vw 0;
   margin: 0px;
   font-family: "Playfair Display", serif;
   display: flex;
-  justify-content: center;
-  position: absolute;
+  justify-content:flex-end;
+  align-items: center;
+  position: fixed;
   bottom: 0;
+
   width: 100%;
 }
+
+.copyright{
+  display: flex;
+  /* justify-content: center; */
+}
+/* .icon-container{
+} */
+
+.icons{
+  margin-left: 3vw;
+  padding-right: 1vw;
+  max-width: 32px;
+}
 footer a {
-  color: #f4e3ab;
+  color: #f2f2f2;
+}
+
+a:link{
+  text-decoration-line: none;
 }
