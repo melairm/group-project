@@ -1,36 +1,42 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
 
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #f4e3ab;
+  background-color: white;
 }
 
 header {
-  background-color: #f4e3ab;
+  background-color: white;
 }
 h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "Open Sans", sans-serif;
 }
 h3 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 #logo {
   width: 150px;
-  margin-right: auto;
+  /* margin-right: auto; */
+  /* text-align: center; */
+  /* margin: 0 auto; */
+  padding: 0px;
   margin-left: 1rem;
+  transition: 0.3s;
 }
 
-footer {
-  background-color: #c77926;
-  margin: 0px;
-  padding: 0px;
-  font-family: "Playfair Display", serif;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+header p {
+  font-family: "Montserrat", sans-serif;
+}
+
+#logo:hover {
+  transform: scale(1.1);
+}
+
+a {
+  color: #c77926;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-right: 2rem;
 }
 
 .dog-image {
@@ -39,18 +45,9 @@ footer {
 
 .top-nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
-
-/* .mobile-container {
-  max-width: 480px;
-  margin: auto;
-  background-color: #555;
-  height: 500px;
-  color: white;
-  border-radius: 10px;
-} */
 
 .list .burger-menu {
   overflow: hidden;
@@ -93,25 +90,11 @@ footer {
   display: none;
 }
 
-/* media queries */
-
-/* @media only screen and (min-width: 600px) {
-  .burger-menu {
-    display: none;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .desktop-list {
-    display: none;
-  }
-} */
-
 /* desktop view */
 .container {
   margin: 0 auto;
   margin-top: 2rem;
   width: min(90%, 70.5rem);
-  background-color: #f4e3ab;
 }
 
 /* Above is the Introduction for all the pages */
@@ -139,4 +122,19 @@ main img {
   border: 5px solid #c77926;
   background-repeat: no-repeat;
   background-position: cover;
+}
+
+footer {
+  background-color: #c77926;
+  padding: 0;
+  margin: 0px;
+  font-family: "Playfair Display", serif;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+footer a {
+  color: #f4e3ab;
 }
