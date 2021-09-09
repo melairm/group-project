@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=Mulish&display=swap");
 
 body {
   margin: 0px;
@@ -10,18 +10,19 @@ header {
   background-color: #f2f2f2;
 }
 h2 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.2rem;
+  font-family: "Boogaloo", cursive;
+  font-size: 1.5rem;
 }
 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 0.9rem;
 }
 
-article{
+article {
   padding: 1vw;
 }
-#logo, #search {
+#logo,
+#search {
   width: 150px;
   /* margin-right: auto; */
   /* text-align: center; */
@@ -31,7 +32,7 @@ article{
   transition: 0.3s;
 }
 
-#search{
+#search {
   max-width: 100px;
 }
 
@@ -44,10 +45,9 @@ header p {
 }
 
 .about {
-  color: #c77926;
-  font-family: "Source Sans Pro", sans-serif;
+  color: #343440;
+  font-family: 'Mulish', sans-serif;
   margin-left: auto;
-
 }
 
 .dog-image {
@@ -62,7 +62,7 @@ header p {
 
 .list .burger-menu {
   overflow: hidden;
-  background-color: #F27052;
+  background-color: #f27052;
   position: relative;
 }
 
@@ -79,7 +79,7 @@ header p {
 }
 
 .list .burger-menu a.icon {
-  background: #F27052;
+  background: #f27052;
   display: block;
   /* position: absolute; */
   right: 0;
@@ -91,8 +91,13 @@ header p {
   color: white;
 }
 
-.list{
+.list {
   position: absolute;
+}
+
+#myLinks a{
+  font-family: 'Mulish', sans-serif;
+  font-size: 0.9rem;
 }
 
 /* Dynamic section */
@@ -115,47 +120,37 @@ header p {
 /* Above is the Introduction for all the pages */
 
 .split {
-  /* display: flex;
-  flex-direction: column; */
   position: absolute;
   top: 15vw;
   left: 26;
-
 }
 
-
 @media (max-width: 800px) {
-  .split{
+  .split {
     position: static;
     display: flex;
     flex-direction: column;
   }
 
-  .textbox{
-    position:static;
-
-
+  .textbox {
+    position: static;
   }
-
 }
 
 @media (min-width: 800px) {
-
-  .splitimage{
+  .splitimage {
     position: relative;
     max-width: 30vw;
-    top:-6vw;
+    top: -6vw;
     left: 5vw;
-    
   }
 
-  .textbox{
+  .textbox {
     position: absolute;
     background-color: #f2f2f2;
     width: 30vw;
-    top:10vw;
+    top: 10vw;
     left: 30vw;
-  
   }
 
   .split {
@@ -170,16 +165,11 @@ header p {
     margin-left: 2em;
     margin-bottom: 2em;
   }
-
-
 }
 main img {
- 
   background-repeat: no-repeat;
   background-position: cover;
 }
-
-
 
 /* .textbox{
   position: absolute;
@@ -190,14 +180,13 @@ main img {
 
 } */
 
-
 footer {
   background-color: #343440;
   padding: 1vw 0 1vw 0;
   margin: 0px;
   font-family: "Playfair Display", serif;
   display: flex;
-  justify-content:flex-end;
+  justify-content: flex-end;
   align-items: center;
   position: fixed;
   bottom: 0;
@@ -205,14 +194,16 @@ footer {
   width: 100%;
 }
 
-.copyright{
+.copyright {
   display: flex;
+  font-family: 'Mulish', sans-serif;
+  color: #f2f2f2;
   /* justify-content: center; */
 }
 /* .icon-container{
 } */
 
-.icons{
+.icons {
   margin-left: 3vw;
   padding-right: 1vw;
   max-width: 32px;
@@ -221,6 +212,6 @@ footer a {
   color: #f2f2f2;
 }
 
-a:link{
+a:link {
   text-decoration-line: none;
 }
